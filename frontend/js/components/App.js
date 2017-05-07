@@ -21,7 +21,7 @@ class App extends React.Component {
                 <nav>
                     <a onClick={this.changePage.bind(this)} href='/'>Home</a><br/>
                     <a onClick={this.changePage.bind(this)} href='/profile'>profile</a><br/>
-                    <a onClick={this.changePage.bind(this)} href='/anotherpage'>Random</a><br/>
+                    <a onClick={this.changePage.bind(this)} href='/anotherpage.html'>Random</a><br/>
                 </nav>
                 <main>
                     { this.props.children }

@@ -30,6 +30,11 @@ const HtmlPluginConfig = new HtmlWebpackPlugin({
     filename: 'index.html'
 });
 
+const ProfileHtmlPluginConfig = new HtmlWebpackPlugin({
+    template: 'frontend/profile.html',
+    filename: 'profile.html'
+});
+
 const CompressionConfig = new CompressionPlugin({
     asset: "[path].gz[query]",
     algorithm: "gzip",
@@ -45,7 +50,7 @@ const WebpackDefineConfig = new webpack.DefinePlugin({
 });
 /****************************/
 
-const plugins = [HtmlPluginConfig, VendorChunksConfig, CompressionConfig];
+const plugins = [HtmlPluginConfig, ProfileHtmlPluginConfig, VendorChunksConfig, CompressionConfig];
 
 if (production) {
     plugins.push(JsUglifyConfig);
@@ -64,6 +69,7 @@ module.exports = {
         ]
     },
     output: {
+        publicPath: '/',
         filename: production ? "assets/[name]-[hash].js" : "assets/[name].js"
     },
     module: {
