@@ -1,54 +1,58 @@
-/**
- * This file handles all routing and async loading of
- * split JavaScript files. The splitting of components
- * is based off the routes created in this file.
- */
+import React from 'react';
+import Router from 'react-router/lib/Router';
+import browserHistory from 'react-router/lib/browserHistory';
+import Route from 'react-router/lib/Router'
+
 import App from './components/App';
 
 // throws an error in the console if the page wasn't able to load
 function errorLoading(error) {
-  throw new Error(`Dynamic page loading failed: ${error}`);
+    throw new Error(`Dynamic page loading failed: ${error}`);
 }
 
 function loadRoute(cb) {
-  return module => cb(null, module.default);
+    return module => cb(null, module.default);
 }
 
 /**
- * This object we are exporting is the equivalent of:
- * <Route path="/" component={Core}>
- *   <IndexRoute component={Home}/>
- *   <Route path="about" component={About}/>
- *   <Route path="users" component={Users}>
- *   <Route path="*" component={Home}/>
- * </Route>
+ * Router takes in the browserHitsory and all the routes we 
+ * created in './routes/'. This is the highest level component
+ * of our application. 
+ * learn more: https://github.com/ReactTraining/react-router/blob/master/docs/API.md#router
  */
-export default {
-  path: '/',
-  component: App,
-  indexRoute: {
-    getComponent(location, cb) {
-      System.import('./components/Homepage')
-        .then(loadRoute(cb))
-        .catch(errorLoading);
-    },
-  },
-  childRoutes: [
-    {
-      path: 'profile',
-      getComponent(location, cb) {
-        System.import('./components/Profile')
-          .then(loadRoute(cb))
-          .catch(errorLoading);
-      },
-    },
-    {
-      path: '*',
-      getComponent(location, cb) {
-        System.import('./components/NotFound')
-          .then(loadRoute(cb))
-          .catch(errorLoading);
-      },
-    },
-  ],
-};
+class Root extends React.Component {
+
+    render() {
+
+        const Homepage = function(location, cb) {
+            System.import('./components/Homepage')
+                .then(loadRoute(cb))
+                .catch(errorLoading);
+        };
+
+        const Profile = function(location, cb) {
+            System.import('./components/Profile')
+                .then(loadRoute(cb))
+                .catch(errorLoading);
+        };
+
+        const NotFound = function(location, cb) {
+            System.import('./components/NotFound')
+                .then(loadRoute(cb))
+                .catch(errorLoading);
+        };
+
+        return (
+            <Router history={browserHistory}>
+                <Route component={App}>
+                    <Route path="/" getComponent={Homepage} />
+                    <Route path="/profile" getComponent={Profile} />
+                    <Route path="*" getComponent={NotFound} />
+                </Route>
+            </Router>
+        );
+    }
+
+}
+
+export default Root;
