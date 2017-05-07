@@ -14,6 +14,7 @@ console.log("PRODUCTION: " + production);
 
 /** Define all plugins needed */
 const JsUglifyConfig = new webpack.optimize.UglifyJsPlugin({
+    sourceMap: true,
     compress:{
         warnings: true
     }
@@ -48,9 +49,18 @@ const WebpackDefineConfig = new webpack.DefinePlugin({
         'NODE_ENV': JSON.stringify('production')
     }
 });
+
+const SourceMapConfig = new webpack.SourceMapDevToolPlugin({
+    test: [/\.js$/, /\.jsx$/],
+    exclude: 'vendor',
+    filename: "assets/[name]-[hash].js.map",
+    append: "//# sourceMappingURL=[url]",
+    moduleFilenameTemplate: '[resource-path]',
+    fallbackModuleFilenameTemplate: '[resource-path]',
+});
 /****************************/
 
-const plugins = [HtmlPluginConfig, ProfileHtmlPluginConfig, VendorChunksConfig, CompressionConfig];
+const plugins = [HtmlPluginConfig, ProfileHtmlPluginConfig, VendorChunksConfig, CompressionConfig, SourceMapConfig];
 
 if (production) {
     plugins.push(JsUglifyConfig);
