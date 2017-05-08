@@ -1,5 +1,35 @@
-$background: lightblue;
-
 body {
-  background-color: $background;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.element {
+  height: 100vh;
+  background-color: #ededed;
+  font-size: 45px;
+  display: table;
+  width: 100%;
+
+  .content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.active {
+  color:red !important;
+}
+
+ul {
+  list-style-type: none;
+
+  &.navigation {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    li {
+      line-height: 30px;
+    }
+  }
 }

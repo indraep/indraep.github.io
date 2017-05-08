@@ -1,0 +1,6 @@
+@for $i from 1 through 12 {
+  .w#{$i} {
+    width: percentage($i/12);;
+    float: left;
+  }
+}
