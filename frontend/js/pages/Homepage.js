@@ -6,10 +6,10 @@ class Homepage extends React.Component {
 		return (
 			<Element name="home" className="container" >
 				<div className='w4 content'>
-					<div className='content__text'>a</div>
+					<div className='content__text'>foto</div>
 				</div>
 				<div className="w12 content">
-					<div className='content__text'>b</div>
+					<div className='content__text'>Indra Eka Prasetya</div>
 				</div>
 			</Element>
 		);
