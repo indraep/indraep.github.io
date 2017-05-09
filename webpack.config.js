@@ -56,7 +56,7 @@ const SourceMapConfig = new webpack.SourceMapDevToolPlugin({
     filename: "assets/[name]-[hash].js.map",
     append: "//# sourceMappingURL=[url]",
     moduleFilenameTemplate: '[resource-path]',
-    fallbackModuleFilenameTemplate: '[resource-path]',
+    fallbackModuleFilenameTemplate: '[resource-path]'
 });
 /****************************/
 
