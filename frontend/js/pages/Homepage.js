@@ -6,8 +6,8 @@ class Homepage extends React.Component {
 		return (
 			<Element name="home" className="element" >
 				<div className='content'>
-					<div className='w3'>a</div>
-					<div className='w9'>b</div>
+					<div className='w4'>a</div>
+					<div className='w12'>b</div>
 				</div>
 			</Element>
 		);

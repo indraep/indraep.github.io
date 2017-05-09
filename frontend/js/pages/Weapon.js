@@ -6,7 +6,11 @@ class Weapon extends React.Component {
 	render() {
 		return (
 			<Element name="weapon" className="element">
-				Weapon
+				<div className="content">
+					<div className='w7'>a</div>
+					<div className='w2 separator'></div>
+					<div className='w7'>b</div>
+				</div>
 			</Element>
 		);
 	}

@@ -12,6 +12,12 @@ body {
   .content {
     display: table-cell;
     vertical-align: middle;
+
+    .separator {
+      border-left: 1px solid;
+      border-right: 1px solid;
+      height: 100%;
+    }
   }
 }
 
@@ -30,6 +36,11 @@ ul {
 
     li {
       line-height: 30px;
+      a {
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
   }
 }

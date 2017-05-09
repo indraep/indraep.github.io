@@ -1,6 +1,9 @@
-@for $i from 1 through 12 {
+$grid-padding: 5px;
+
+@for $i from 1 through 16 {
   .w#{$i} {
-    width: percentage($i/12);;
+    width: calc(#{100% * $i / 16} - #{2 * $grid-padding});
     float: left;
+    padding: 0px $grid-padding;
   }
 }
