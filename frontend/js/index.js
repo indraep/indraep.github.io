@@ -1,5 +1,6 @@
-import '../css/style.scss';
+import '../css/icon.scss';
 import '../css/grid.scss';
+import '../css/style.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

@@ -9,37 +9,37 @@ class Navigation extends React.Component {
 				<ul className='navigation'>
 					<li>
 						<Link activeClass="active" to="home" spy={true} smooth={true} duration={500} >
-							Home
+							<i className="icon icon__name"></i>
 						</Link>
 					</li>
 					<li>
 						<Link activeClass="active" to="weapon" spy={true} smooth={true} duration={500}>
-							Weapon
+							<i className="icon icon__skill"></i>
 						</Link>
 					</li>
 					<li>
 						<Link activeClass="active" to="stuff" spy={true} smooth={true} duration={500} >
-							Stuff
+							<i className="icon icon__project"></i>
 						</Link>
 					</li>
 					<li>
 						<Link activeClass="active" to="work" spy={true} smooth={true} duration={500}>
-							Work
+							<i className="icon icon__work"></i>
 						</Link>
 					</li>
 					<li>
 						<Link activeClass="active" to="education" spy={true} smooth={true} duration={500}>
-							Education
+							<i className="icon icon__education"></i>
 						</Link>
 					</li>
 					<li>
 						<Link activeClass="active" to="award" spy={true} smooth={true} duration={500}>
-							Award
+							<i className="icon icon__award"></i>
 						</Link>
 					</li>
 					<li>
 						<Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>
-							Contact
+							<i className="icon icon__contact"></i>
 						</Link>
 					</li>
 				</ul>
