@@ -4,6 +4,17 @@ body {
   font-family: 'Open Sans', sans-serif;
   color:#ffffff;
   font-weight: 300;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
 }
 
 .container {
@@ -20,6 +31,16 @@ body {
     &__text{
       display: table-cell;
       vertical-align: middle;
+      text-align: center;
+
+      .contact {
+        display: block;
+
+        img {
+          width: 64px;
+          margin: 20px;
+        }
+      }
     }
 
     &__separator {
