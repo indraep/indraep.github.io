@@ -1,15 +1,1235 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="utf-8" />
-	    <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" />
 
-		<title>Indra Eka Prasetya</title>
-	</head>
-	<body>
-		<div id="container">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/js/jquery-1.12.1.min.js"></script>
+    <script src="assets/js/app-min.js"></script>
 
-		</div>
-	<script type="text/javascript" src="/assets/vendor.bundle.js"></script><script type="text/javascript" src="/assets/bundle-53c52940d948ed5110d0.js"></script></body>
+    <title>Wuling</title>
+</head>
+
+<body>
+    <div id="header">
+        <a id="btn-nav-home" href="wuling://navigatetoslide:intro"></a>
+        <div class="wuling"></div>
+    </div>
+    <div id="sidebar" style="transform: translateX(-27.3vw);">
+        <div class="top" style="transform: translateX(9vw);">
+            <a href="#" class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <a href="#" id="nav-back"></a>
+        </div>
+        <div class="body">
+            <div style="padding-top: 11.8vh;">
+                <a href="wuling://navigatetoslide:intro"></a>
+                <a href="wuling://navigatetopage:user-form"></a>
+                <a href="wuling://navigatetopage:drive"><span id="drive-badge"></span></a>
+            </div>
+        </div>
+    </div>
+    <div id="header-right-toolbar">
+        <div class="right mic">
+            <span class="internal-use">For internal use only</span>
+            <a href="#" id="record"></a>
+        </div>
+        <div class="right drive">
+            <span class="current-date"></span>
+            <a href="#" id="refresh-drive"></a>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="container">
+            <a href="#" section="exterior" class="current"><span></span></a>
+            <a href="#" section="interior"><span></span></a>
+            <a href="#" section="specifications"><span></span></a>
+        </div>
+    </div>
+    <div id="stage-container">
+
+<div id="intro" section="intro" class="stage slide">
+    <div class="slides">
+        <div product="cortez" class="current"></div>
+        <div product="confero"></div>
+    </div>
+
+    <div class="logo"></div>
+    <div class="switch">
+        <a href="#" class="slide-view current"></a>
+        <a href="#" class="grid-view"></a>
+    </div>
+
+    <a href="#" class="btn-start"></a>
+    
+    <ul class="pagination"></ul>
+</div>
+
+<div id="confero-home" section="home" class="stage slide">
+    <div class="slides">
+        <div class="slide-1 current"></div>
+        <div class="slide-2"></div>
+        <div class="slide-3"></div>
+    </div>
+
+    <div class="logo"></div>
+    <a href="#" data-href="wuling://navigatetoslide:confero-exterior" class="btn-next"></a>
+    <a href="#" class="btn-prev"></a>
+</div>
+<div id="confero-exterior" section="exterior" class="stage slide">
+    <div class="wuling">
+            <div class="header">
+        
+                        <ul class="dropdown">
+                            <li class="item"><a href="wuling://productselect:confero"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-c"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-c-lux"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-c-lux+"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-l"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-l-lux"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-l-lux+"></a></li>
+                            <li class="caret"></li>
+                        </ul>
+                
+        
+            </div>
+            <div class="body">
+        
+                            <div id="exterior-confero" product="confero" class="current stage-sub stage-sub-2">
+                                <div id="exterior-confero-angle-1" class="current stage-sub angle angle-1">
+                                    <div class="color-opts">
+                                        <div class="black"></div>
+                                        <div class="brown"></div>
+                                        <div class="red current"></div>
+                                        <div class="silver"></div>
+                                        <div class="white"></div>
+                                    </div>
+                                    <div class="details">
+                                        <a href="wuling://showdetail" class="det-grille"></a>
+                                        <a href="wuling://showdetail" class="det-vvt-i"></a>
+                                        <a href="wuling://showdetail" class="det-disc-brake"></a>
+                                        <a href="wuling://showdetail" class="det-side-door-mirror"></a>
+                                        <a href="wuling://showdetail" class="det-grip"></a>
+                                        <a href="wuling://showdetail" class="det-rear-spoiler"></a>
+                                        <a href="wuling://showdetail" class="det-wheel"></a>
+                                    </div>
+                                </div>
+                                <div id="exterior-confero-angle-2" class="stage-sub angle angle-2">
+                                    <div class="color-opts">
+                                        <div class="black"></div>
+                                        <div class="brown"></div>
+                                        <div class="red current"></div>
+                                        <div class="silver"></div>
+                                        <div class="white"></div>
+                                    </div>
+                                    <div class="details">
+                                        <!-- <a href="wuling://showdetail" class="det-vvt-i"></a> -->
+                                        <a href="wuling://showdetail" class="det-grille"></a>
+                                        <a href="wuling://showdetail" class="det-side-door-mirror"></a>
+                                    </div>                    
+                                </div>
+                                <div id="exterior-confero-angle-3" class="stage-sub angle angle-3">
+                                    <div class="color-opts">
+                                        <div class="black"></div>
+                                        <div class="brown"></div>
+                                        <div class="red current"></div>
+                                        <div class="silver"></div>
+                                        <div class="white"></div>
+                                    </div>
+                                    <div class="details">
+                                        <a href="wuling://showdetail" class="det-rear-spoiler"></a>
+                                        <a href="wuling://showdetail" class="det-tailgate"></a>
+                                    </div>                    
+                                </div>
+                            </div>
+                
+                            <div id="exterior-confero-c" product="confero-c" class="stage-sub stage-sub-2">
+                                        <div id="exterior-confero-c-angle-1" class="current stage-sub angle angle-1">
+                                            <div class="color-opts">
+                                                <div class="black"></div>
+                                                <div class="brown"></div>
+                                                <div class="red current"></div>
+                                                <div class="silver"></div>
+                                                <div class="white"></div>
+                                            </div>
+                                            <div class="details">
+                                                <a href="wuling://showdetail" class="det-grille"></a>
+                                                <a href="wuling://showdetail" class="det-head-lamp"></a>
+                                                <a href="wuling://showdetail" class="det-vvt-i"></a>
+                                                <a href="wuling://showdetail" class="det-drl-led"></a>
+                                                <a href="wuling://showdetail" class="det-foglamp"></a>
+                                                <a href="wuling://showdetail" class="det-disc-brake"></a>
+                                                <a href="wuling://showdetail" class="det-side-door-mirror"></a>
+                                                <a href="wuling://showdetail" class="det-grip"></a>
+                                                <a href="wuling://showdetail" class="det-side-molding"></a>
+                                                <a href="wuling://showdetail" class="det-roof-rail"></a>
+                                                <a href="wuling://showdetail" class="det-wheel"></a>
+                                                <a href="wuling://showdetail" class="det-rear-spoiler"></a>
+                                            </div>
+                                        </div>
+                                        <div id="exterior-confero-c-angle-2" class="stage-sub angle angle-2">
+                                            <div class="color-opts">
+                                                <div class="black"></div>
+                                                <div class="brown"></div>
+                                                <div class="red current"></div>
+                                                <div class="silver"></div>
+                                                <div class="white"></div>
+                                            </div>
+                                            <div class="details">
+                                                <a href="wuling://showdetail" class="det-roof-rail"></a>
+                                                <a href="wuling://showdetail" class="det-side-door-mirror"></a>
+                                                <a href="wuling://showdetail" class="det-head-lamp"></a>
+                                                <a href="wuling://showdetail" class="det-grille"></a>
+                                                <a href="wuling://showdetail" class="det-foglamp"></a>
+                                                <a href="wuling://showdetail" class="det-bumper"></a>
+                                                <a href="wuling://showdetail" class="det-drl-led"></a>
+                                            </div>                    
+                                        </div>
+                                        <div id="exterior-confero-c-angle-3" class="stage-sub angle angle-3">
+                                            <div class="color-opts">
+                                                <div class="black"></div>
+                                                <div class="brown"></div>
+                                                <div class="red current"></div>
+                                                <div class="silver"></div>
+                                                <div class="white"></div>
+                                            </div>
+                                            <div class="details">
+                                                <a href="wuling://showdetail" class="det-rear-spoiler"></a>
+                                                <a href="wuling://showdetail" class="det-high-mount-stop-lamp"></a>
+                                                <a href="wuling://showdetail" class="det-rear-frameless-wiper"></a>
+                                                <a href="wuling://showdetail" class="det-tailgate"></a>
+                                                <a href="wuling://showdetail" class="det-chrome-rear-garnish"></a>
+                                                <a href="wuling://showdetail" class="det-rear-foglamp"></a>
+                                                <a href="wuling://showdetail" class="det-parking-sensor"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                            <div id="exterior-confero-l" product="confero-l" class="stage-sub stage-sub-2">
+                                                <div id="exterior-confero-l-angle-1" class="current stage-sub angle angle-1">
+                                                    <div class="color-opts">
+                                                        <div class="black"></div>
+                                                        <div class="brown"></div>
+                                                        <div class="red current"></div>
+                                                        <div class="silver"></div>
+                                                        <div class="white"></div>
+                                                    </div>
+                                                    <div class="details">
+                                                        <a href="wuling://showdetail" class="det-grille"></a>
+                                                        <a href="wuling://showdetail" class="det-head-lamp"></a>
+                                                        <a href="wuling://showdetail" class="det-vvt-i"></a>
+                                                        <a href="wuling://showdetail" class="det-drl-led"></a>
+                                                        <a href="wuling://showdetail" class="det-foglamp"></a>
+                                                        <a href="wuling://showdetail" class="det-abs-ebd"></a>
+                                                        <a href="wuling://showdetail" class="det-side-door-mirror"></a>
+                                                        <a href="wuling://showdetail" class="det-grip"></a>
+                                                        <a href="wuling://showdetail" class="det-side-molding"></a>
+                                                        <a href="wuling://showdetail" class="det-roof-rail"></a>
+                                                        <a href="wuling://showdetail" class="det-wheel"></a>
+                                                        <a href="wuling://showdetail" class="det-rear-spoiler"></a>
+                                                        <a href="wuling://showdetail" class="det-chrome-window"></a>
+                                                        <a href="wuling://showdetail" class="det-front-sensor"></a>
+                                                        <!-- <a href="wuling://showdetail" class="det-bumper"></a> -->
+                                                    </div>
+                                                </div>
+                                                <div id="exterior-confero-l-angle-2" class="stage-sub angle angle-2">
+                                                    <div class="color-opts">
+                                                        <div class="black"></div>
+                                                        <div class="brown"></div>
+                                                        <div class="red current"></div>
+                                                        <div class="silver"></div>
+                                                        <div class="white"></div>
+                                                    </div>
+                                                    <div class="details">
+                                                        <a href="wuling://showdetail" class="det-roof-rail"></a>
+                                                        <a href="wuling://showdetail" class="det-side-door-mirror"></a>
+                                                        <a href="wuling://showdetail" class="det-head-lamp"></a>
+                                                        <a href="wuling://showdetail" class="det-front-sensor"></a>
+                                                        <a href="wuling://showdetail" class="det-grille"></a>
+                                                        <a href="wuling://showdetail" class="det-foglamp"></a>
+                                                        <a href="wuling://showdetail" class="det-drl-led"></a>
+                                                        <a href="wuling://showdetail" class="det-bumper"></a>
+                                                    </div>
+                                                </div>
+                                                <div id="exterior-confero-l-angle-3" class="stage-sub angle angle-3">
+                                                    <div class="color-opts">
+                                                        <div class="black"></div>
+                                                        <div class="brown"></div>
+                                                        <div class="red current"></div>
+                                                        <div class="silver"></div>
+                                                        <div class="white"></div>
+                                                    </div>
+                                                    <div class="details">
+                                                        <a href="wuling://showdetail" class="det-rear-spoiler"></a>
+                                                        <a href="wuling://showdetail" class="det-high-mount-stop-lamp"></a>
+                                                        <a href="wuling://showdetail" class="det-rear-frameless-wiper"></a>
+                                                        <a href="wuling://showdetail" class="det-tailgate"></a>
+                                                        <a href="wuling://showdetail" class="det-chrome-rear-garnish"></a>
+                                                        <a href="wuling://showdetail" class="det-rear-camera"></a>
+                                                        <a href="wuling://showdetail" class="det-rear-foglamp"></a>
+                                                        <a href="wuling://showdetail" class="det-parking-sensor"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                
+        
+            </div>
+        
+            <div class="color-selector">
+                <span class="white"></span>
+                <span class="silver"></span>
+                <span class="red current"></span>
+                <span class="brown"></span>
+                <span class="black"></span>
+            </div>
+    </div>
+    <div class="competitor">
+            <div class="header">
+        
+                        <ul class="dropdown">
+                            <li class="item current"><a href="wuling://productselect:sigra" ></a></li>
+                            <li class="item"><a href="wuling://productselect:calya"></a></li>
+                            <li class="item"><a href="wuling://productselect:avanza"></a></li>
+                            <li class="item"><a href="wuling://productselect:xenia"></a></li>
+                            <li class="item"><a href="wuling://productselect:ertiga"></a></li>
+                            <li class="item"><a href="wuling://productselect:mobilio"></a></li>
+                            <li class="caret"></li>
+                        </ul>
+                
+        
+            </div>
+            <div class="body">
+        
+                <div id="exterior-sigra" product="sigra" class="current stage-sub stage-sub-2">
+                    <div id="exterior-sigra-angle-1" class="current stage-sub angle"></div>
+                </div>
+        
+                <div id="exterior-calya" product="calya" class="stage-sub stage-sub-2">
+                    <div id="exterior-calya-angle-1" class="current stage-sub angle"></div>
+                </div>
+        
+                <div id="exterior-avanza" product="avanza" class="stage-sub stage-sub-2">
+                    <div id="exterior-avanza-angle-1" class="current stage-sub angle"></div>
+                </div>
+        
+                <div id="exterior-ertiga" product="ertiga" class="stage-sub stage-sub-2">
+                    <div id="exterior-ertiga-angle-1" class="current stage-sub angle"></div>
+                </div>
+        
+                <div id="exterior-mobilio" product="mobilio" class="stage-sub stage-sub-2">
+                    <div id="exterior-mobilio-angle-1" class="current stage-sub angle"></div>
+                </div>
+        
+                <div id="exterior-xenia" product="xenia" class="stage-sub stage-sub-2">
+                    <div id="exterior-xenia-angle-1" class="current stage-sub angle"></div>
+                </div>
+        
+            </div>
+        
+        
+    </div>    
+
+    <a href="wuling://rotatecw" class="rotate-cw"></a>
+    <a href="wuling://rotateccw" class="rotate-ccw"></a>
+    <a href="wuling://compare" class="toggle-comparison"></a>
+</div>
+<div id="confero-interior" section="interior" class="stage slide">
+    <div class="wuling">
+            <div class="header">
+        
+                        <ul class="dropdown">
+                            <li class="item"><a href="wuling://productselect:confero"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-c"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-c-lux"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-c-lux+"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-l"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-l-lux"></a></li>
+                            <li class="item"><a href="wuling://productselect:confero-l-lux+"></a></li>
+                            <li class="caret"></li>
+                        </ul>
+                
+        
+            </div>
+            <div class="body">
+        
+                            <div id="interior-confero" product="confero" class="current stage-sub stage-sub-2">
+                                <div 
+                                    id="interior-confero-cabin" 
+                                    class="current stage-sub cabin" 
+                                    >
+                                    <div class="details">
+                                        <a href="wuling://showdetail" class="det-head-rest"></a>
+                                        <a href="wuling://showdetail" class="det-leather"></a>
+                                        <a href="wuling://showdetail" class="det-auto-door-lock"></a>
+                                        <a href="wuling://showdetail" class="det-cabin"></a>
+                                        <a href="wuling://showdetail" class="det-iso"></a>
+                                        <a href="wuling://showdetail" class="det-usb-3rd-row"></a>
+                                        <a href="wuling://showdetail" class="det-trunk"></a>
+                                        <a href="wuling://showdetail" class="det-all-purpose-utility-space"></a>
+                                    </div>
+                                </div>
+                
+                                <div 
+                                    id="interior-confero-dashboard" 
+                                    class="stage-sub dashboard" 
+                                    >
+                                    <div class="details">
+                                        <a href="wuling://showdetail" class="det-clock"></a>
+                                        <a href="wuling://showdetail" class="det-tpms"></a>
+                                        <a href="wuling://showdetail" class="det-multipurpose-utility-space"></a>
+                                        <a href="wuling://showdetail" class="det-usb-play"></a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div id="interior-confero-c" product="confero-c" class="stage-sub stage-sub-2">
+                                        <div 
+                                            id="interior-confero-c-cabin" 
+                                            class="current stage-sub cabin" 
+                                            >
+                                            <div class="details">
+                                                <a href="wuling://showdetail" class="det-head-rest"></a>
+                                                <a href="wuling://showdetail" class="det-leather"></a>
+                                                <a href="wuling://showdetail" class="det-auto-door-lock"></a>
+                                                <a href="wuling://showdetail" class="det-cabin"></a>
+                                                <a href="wuling://showdetail" class="det-iso"></a>
+                                                <a href="wuling://showdetail" class="det-usb-3rd-row"></a>
+                                                <a href="wuling://showdetail" class="det-trunk"></a>
+                                                <a href="wuling://showdetail" class="det-all-purpose-utility-space"></a>
+                                                <a href="wuling://showdetail" class="det-console"></a>
+                                                <a href="wuling://showdetail" class="det-ac"></a>
+                                                <a href="wuling://showdetail" class="det-power-door-mirror"></a>
+                                                <a href="wuling://showdetail" class="det-collision-auto-unlock"></a>
+                                                <a href="wuling://showdetail" class="det-usb-2nd-row"></a>
+                                            </div>
+                                        </div>
+                        
+                                        <div 
+                                            id="interior-confero-c-dashboard" 
+                                            class="stage-sub dashboard" 
+                                            >
+                                            <div class="details">
+                                                <a href="wuling://showdetail" class="det-clock"></a>
+                                                <a href="wuling://showdetail" class="det-tpms"></a>
+                                                <a href="wuling://showdetail" class="det-multipurpose-utility-space"></a>
+                                                <a href="wuling://showdetail" class="det-usb-play"></a>
+                                                <a href="wuling://showdetail" class="det-tilt-steering"></a>
+                                                <a href="wuling://showdetail" class="det-srs"></a>
+                                                <a href="wuling://showdetail" class="det-srs" data-variant="2"></a>
+                                                <a href="wuling://showdetail" class="det-rke"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                            <div id="interior-confero-l" product="confero-l" class="stage-sub stage-sub-2">
+                                                <div 
+                                                    id="interior-confero-l-cabin" 
+                                                    class="current stage-sub cabin" 
+                                                    >
+                                                    <div class="details">
+                                                        <a href="wuling://showdetail" class="det-head-rest"></a>
+                                                        <a href="wuling://showdetail" class="det-leather"></a>
+                                                        <a href="wuling://showdetail" class="det-auto-door-lock"></a>
+                                                        <a href="wuling://showdetail" class="det-cabin"></a>
+                                                        <a href="wuling://showdetail" class="det-iso"></a>
+                                                        <a href="wuling://showdetail" class="det-usb-3rd-row"></a>
+                                                        <a href="wuling://showdetail" class="det-trunk"></a>
+                                                        <a href="wuling://showdetail" class="det-all-purpose-utility-space"></a>
+                                                        <a href="wuling://showdetail" class="det-console"></a>
+                                                        <a href="wuling://showdetail" class="det-ac"></a>
+                                                        <a href="wuling://showdetail" class="det-power-door-mirror"></a>
+                                                        <a href="wuling://showdetail" class="det-collision-auto-unlock"></a>
+                                                        <a href="wuling://showdetail" class="det-usb-2nd-row"></a>
+                                                    </div>
+                                                </div>
+                                
+                                                <div 
+                                                    id="interior-confero-l-dashboard" 
+                                                    class="stage-sub dashboard" 
+                                                    >
+                                                    <div class="details">
+                                                        <a href="wuling://showdetail" class="det-clock"></a>
+                                                        <a href="wuling://showdetail" class="det-tpms"></a>
+                                                        <a href="wuling://showdetail" class="det-multipurpose-utility-space"></a>
+                                                        <a href="wuling://showdetail" class="det-usb-play"></a>
+                                                        <a href="wuling://showdetail" class="det-tilt-steering"></a>
+                                                        <a href="wuling://showdetail" class="det-srs"></a>
+                                                        <a href="wuling://showdetail" class="det-srs" data-variant="2"></a>
+                                                        <a href="wuling://showdetail" class="det-rke"></a>
+                                                        <a href="wuling://showdetail" class="det-audio"></a>
+                                                        <a href="wuling://showdetail" class="det-steering-switch-control"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                
+        
+            </div>
+        
+        
+    </div>
+    <div class="competitor">
+            <div class="header">
+        
+                        <ul class="dropdown">
+                            <li class="item current"><a href="wuling://productselect:sigra" ></a></li>
+                            <li class="item"><a href="wuling://productselect:calya"></a></li>
+                            <li class="item"><a href="wuling://productselect:avanza"></a></li>
+                            <li class="item"><a href="wuling://productselect:xenia"></a></li>
+                            <li class="item"><a href="wuling://productselect:ertiga"></a></li>
+                            <li class="item"><a href="wuling://productselect:mobilio"></a></li>
+                            <li class="caret"></li>
+                        </ul>
+                
+        
+            </div>
+            <div class="body">
+        
+                <div id="interior-sigra" product="sigra" class="current stage-sub stage-sub-2">
+                    <div id="interior-sigra-cabin" class="current stage-sub cabin"></div>
+                    <div id="interior-sigra-dashboard" class="stage-sub dashboard"></div>
+                </div>
+        
+                <div id="interior-calya" product="calya" class="stage-sub stage-sub-2">
+                    <div id="interior-calya-cabin" class="current stage-sub cabin"></div>
+                    <div id="interior-calya-dashboard" class="stage-sub dashboard"></div>
+                </div>
+        
+                <div id="interior-avanza" product="avanza" class="stage-sub stage-sub-2">
+                    <div id="interior-avanza-cabin" class="current stage-sub cabin"></div>
+                    <div id="interior-avanza-dashboard" class="stage-sub dashboard"></div>
+                </div>
+        
+                <div id="interior-ertiga" product="ertiga" class="stage-sub stage-sub-2">
+                    <div id="interior-ertiga-cabin" class="current stage-sub cabin"></div>
+                    <div id="interior-ertiga-dashboard" class="stage-sub dashboard"></div>
+                </div>
+        
+                <div id="interior-mobilio" product="mobilio" class="stage-sub stage-sub-2">
+                    <div id="interior-mobilio-cabin" class="current stage-sub cabin"></div>
+                    <div id="interior-mobilio-dashboard" class="stage-sub dashboard"></div>
+                </div>
+        
+                <div id="interior-xenia" product="xenia" class="stage-sub stage-sub-2">
+                    <div id="interior-xenia-cabin" class="current stage-sub cabin"></div>
+                    <div id="interior-xenia-dashboard" class="stage-sub dashboard"></div>
+                </div>
+        
+            </div>
+        
+        
+    </div>
+
+    <div class="tools">
+        <a href="wuling://switchview" class="current toggle-cabin"></a>
+        <a href="wuling://switchview" class="toggle-dashboard"></a>
+    </div>
+
+    <a href="wuling://compare" class="toggle-comparison"></a>
+</div>
+<div id="confero-specifications" section="specifications" class="stage slide">
+
+    <div class="header">
+        <div class="wuling">
+            <ul class="dropdown">
+                <li class="item"><a href="wuling://productselect:confero"></a></li>
+                <li class="item"><a href="wuling://productselect:confero-c"></a></li>
+                <li class="item"><a href="wuling://productselect:confero-l"></a></li>
+                <li class="caret"></li>
+            </ul>            
+        </div>
+
+        <a href="wuling://compare" class="toggle-comparison"></a>
+
+        <div class="competitor">
+
+            <ul class="dropdown">
+                <li class="item current"><a href="wuling://productselect:sigra" ></a></li>
+                <li class="item"><a href="wuling://productselect:calya"></a></li>
+                <li class="item"><a href="wuling://productselect:avanza"></a></li>
+                <li class="item"><a href="wuling://productselect:xenia"></a></li>
+                <li class="item"><a href="wuling://productselect:ertiga"></a></li>
+                <li class="item"><a href="wuling://productselect:mobilio"></a></li>
+                <li class="caret"></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="scrollable">
+            <table id="specs" cellspacing="0" cellpadding="0">
+
+                <tr class="head"><td>SPESIFIKASI</td><td></td><td></td></tr>
+                <tr class="section-title"><td>Dimensi</td><td></td><td></td></tr>
+
+                <tr data-property="panjang"><td><div>Panjang<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="lebar"><td><div>Lebar<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="tinggi"><td><div>Tinggi<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="poros_roda"><td><div>Poros Roda<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="jarak_pijak_depan"><td><div>Jarak Pijak Depan<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="jarak_pijak_belakang"><td><div>Jarak Pijak Belakang<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="radius_putar"><td><div>Radius Putar<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="kapasitas_tangki"><td><div>Kapasitas Tangki<span class="unit">L</span></div></td><td><div></div></td><td><div></div></td></tr>
+                
+                <tr class="section-title"><td>Mesin</td><td></td><td></td></tr>
+
+                <tr data-property="tipe_mesin"><td><div>Tipe Mesin</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="isi_silinder"><td><div>Isi Silinder<span class="unit">cc</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="daya_maksimum"><td><div>Daya Maksimum<span class="unit">HP/RPM</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="torsi_maksimum"><td><div>Torsi Maksimum<span class="unit">Nm/RPM</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="bahan_bakar"><td><div>Bahan Bakar</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="section-title"><td>Transmisi</td><td></td><td></td></tr>
+
+                <tr data-property="tipe_mesin_transmisi"><td><div>Tipe</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_1"><td><div>Perbandingan Gigi<span class="unit">1</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_2"><td><div><span class="unit">2</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_3"><td><div><span class="unit">3</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_4"><td><div><span class="unit">4</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_5"><td><div><span class="unit">5</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_mundur"><td><div>&nbsp;<span class="unit">Mundur</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_akhir"><td><div>Perbandingan Gigi Akhir</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="section-title"><td>Sasis</td><td></td><td></td></tr>
+
+                <tr data-property="roda_penggerak"><td><div>Penggerak Roda</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="tipe_kemudi"><td><div>Tipe Kemudi</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="tilt_steering"><td><div>Tilt Steering</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="suspensi_front"><td><div>Suspensi<span class="unit">Front</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="suspensi_rear"><td><div>&nbsp;<span class="unit">Rear</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="rem_front"><td><div>Rem<span class="unit">Front</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="rem_rear"><td><div>&nbsp;<span class="unit">Rear</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="ukuran_ban"><td><div>Ukuran Ban</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="velg"><td><div>Velg</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="head"><td>KONFIGURASI</td><td></td><td></td></tr>
+                <tr class="section-title"><td>Eksterior</td><td></td><td></td></tr>
+
+                <tr data-property="handle_pintu"><td><div>Handle Pintu</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="spoiler_belakang"><td><div>Spoiler Belakang</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="lampu_sein_pada_spion"><td><div>Lampu Sein Pada Spion</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="pillar_aerial"><td><div>Pillar Aerial</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="chrome_grill"><td><div>Chrome Grill</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="led_high_mount_stop_lamp"><td><div>LED High Mount Stop Lamp</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="luxurious_sporty_design"><td><div>Luxurious & Sporty Design</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="headlamp"><td><div>Height Adjustable Projector Head Lamp</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="front_fog_lamp"><td><div>Front Fog Lamp</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="led_rear_fog_lamp"><td><div>LED Rear Fog Lamp</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="led_drl"><td><div>LED Day Running Light (DRL)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="roof_rail"><td><div>Roof Rail</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="rear_wiper"><td><div>Rear Wiper</div></td><td><div></div></td><td><div></div></td></tr>
+                <!-- <tr data-property="boneless_wiper"><td><div>Boneless Wiper</div></td><td><div></div></td><td><div></div></td></tr> -->
+                <tr data-property="chrome_window"><td><div>Chrome Window Graphic List Ornament</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="warna_body"><td><div>Warna Body</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="section-title"><td>Interior</td><td></td><td></td></tr>
+
+                <tr data-property="entertainment_system"><td><div>Entertainment System</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="steering_wheel_with_chrome"><td><div>Steering Wheel With Chrome</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="clock_in_ip"><td><div>Clock in IP</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="height_adjustable_headrest"><td><div>Head Adjustable Headrest</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="fabric_seats"><td><div>Fabric Seatc (2+3+3)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="semi-leather_seats_2+3+3"><td><div>Semi-Leather Seats (2+3+3)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="semi-leather_seats_2+2+3"><td><div>Semi-Leather Seats (2+2+3)</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="section-title"><td>Convenience</td><td></td><td></td></tr>
+
+                <tr data-property="power_tailgate_lock"><td><div>Power Tailgate Lock</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="usb_3rd_row"><td><div>USB Power Outlet for 3rd row Passengers</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="power_windows"><td><div>Power Windows</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="pinch_protection"><td><div>Automatic Driver Side Window (Pinch Protection)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="single_ac"><td><div>Single AC Blower (Front Only)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="double_ac"><td><div>Double AC Blower</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="remote_windows"><td><div>Remote Open Windows</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="power_door_mirror"><td><div>Power Door Mirror</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="console_box"><td><div>Console Box </div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="rke"><td><div>Foldable RKE</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="steering_audio"><td><div>Steering Wheel With Audio Control</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="section-title"><td>Safety & Security</td><td></td><td></td></tr>
+
+                <tr data-property="seatbelt"><td><div>Seatbelt</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="seatbelt_reminder"><td><div>Seatbelt Reminder (Driver and Passenger Side)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="iso_fix"><td><div>2nd Row Seats with ISO-FIX</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="child_safety_lock"><td><div>Child Safety Lock</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="auto_door_lock"><td><div>Auto Door Lock by Speed</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="collision_auto_unlock"><td><div>Collision auto-unlock</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="dual_srs"><td><div>Dual SRS Airbag</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="tpms"><td><div>Tire Pressure Monitor System (TPMS) </div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="anti_theft"><td><div>Electronic Anti-Theft System</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="parking_sensor_rear"><td><div>4 Points Rear Parking Sensor</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="front_sensor"><td><div>2 Points Front Corner Sensor</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="abs_ebd"><td><div>ABS+EBD </div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="immobilizer"><td><div>Immobilizer </div></td><td><div></div></td><td><div></div></td></tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<div id="cortez-home" section="home" class="stage slide">
+    <div class="slides">
+        <div class="slide-1 current"></div>
+    </div>
+
+    <div class="logo"></div>
+    <a href="#" data-href="wuling://navigatetoslide:cortez-exterior" class="btn-next"></a>
+    <a href="#" class="btn-prev"></a>
+</div>
+<div id="cortez-exterior" section="exterior" class="stage slide">
+    <div class="wuling">
+        <div class="header">
+
+                    <ul class="dropdown">
+                        <li class="item"><a href="wuling://productselect:cortez-c-6mt"></a></li>
+                        <li class="item"><a href="wuling://productselect:cortez-c-amt"></a></li>
+                        <li class="item"><a href="wuling://productselect:cortez-c-lux+-amt"></a></li>
+                        <li class="item"><a href="wuling://productselect:cortez-l-lux+-6mt"></a></li>
+                        <li class="item"><a href="wuling://productselect:cortez-l-lux+-amt"></a></li>
+                        <li class="caret"></li>
+                    </ul>
+            
+
+        </div>
+        <div class="body">
+
+                        <div id="exterior-cortez-c" product="cortez-c" class="current stage-sub stage-sub-2">
+                            <div id="exterior-cortez-c-angle-1" class="current stage-sub angle angle-1">
+                                <div class="color-opts">
+                                    <div class="black"></div>
+                                    <div class="brown"></div>
+                                    <div class="purple current"></div>
+                                    <div class="grey"></div>
+                                    <div class="white"></div>
+                                </div>
+                                <div class="details">
+                                    <a href="wuling://showdetail" class="det-roof-rail"></a>
+                                    <a href="wuling://showdetail" class="det-retractable-side-mirror"></a>
+                                    <!-- <a href="wuling://showdetail" class="det-sunroof"></a> -->
+                                    <a href="wuling://showdetail" class="det-head-lamp"></a>
+                                    <a href="wuling://showdetail" class="det-frameless-wiper"></a>
+                                    <a href="wuling://showdetail" class="det-vvt-i"></a>
+                                    <a href="wuling://showdetail" class="det-grille"></a>
+                                    <!-- <a href="wuling://showdetail" class="det-front-sensor"></a> -->
+                                    <!-- <a href="wuling://showdetail" class="det-auto-light"></a> -->
+                                    <a href="wuling://showdetail" class="det-foglamp"></a>
+                                    <a href="wuling://showdetail" class="det-drl-led"></a>
+                                    <a href="wuling://showdetail" class="det-wheel"></a>
+                                    <a href="wuling://showdetail" class="det-super-safety"></a>
+                                    <a href="wuling://showdetail" class="det-grip"></a>
+                                    <!-- <a href="wuling://showdetail" class="det-chrome-window"></a> -->
+                                    <a href="wuling://showdetail" class="det-side-door-mirror"></a>
+                                </div>
+                            </div>
+                            <div id="exterior-cortez-c-angle-2" class="stage-sub angle angle-2">
+                                <div class="color-opts">
+                                    <div class="black"></div>
+                                    <div class="brown"></div>
+                                    <div class="purple current"></div>
+                                    <div class="grey"></div>
+                                    <div class="white"></div>
+                                </div>
+                                <div class="details">
+                                    <!-- <a href="wuling://showdetail" class="det-sunroof"></a> -->
+                                    <a href="wuling://showdetail" class="det-roof-rail"></a>
+                                    <a href="wuling://showdetail" class="det-grille"></a>
+                                    <!-- <a href="wuling://showdetail" class="det-front-sensor"></a> -->
+                                    <a href="wuling://showdetail" class="det-foglamp"></a>
+                                    <a href="wuling://showdetail" class="det-drl-led"></a>
+                                    <!-- <a href="wuling://showdetail" class="det-auto-light"></a> -->
+                                    <a href="wuling://showdetail" class="det-head-lamp"></a>
+                                    <a href="wuling://showdetail" class="det-side-door-mirror"></a>
+                                </div>                    
+                            </div>
+                            <div id="exterior-cortez-c-angle-3" class="stage-sub angle angle-3">
+                                <div class="color-opts">
+                                    <div class="black"></div>
+                                    <div class="brown"></div>
+                                    <div class="purple current"></div>
+                                    <div class="grey"></div>
+                                    <div class="white"></div>
+                                </div>
+                                <div class="details">
+                                    <a href="wuling://showdetail" class="det-rear-parking-camera"></a>
+                                    <a href="wuling://showdetail" class="det-high-mount-stop-lamp"></a>
+                                    <a href="wuling://showdetail" class="det-shark-fin-antenna"></a>
+                                    <a href="wuling://showdetail" class="det-rear-spoiler"></a>
+                                    <a href="wuling://showdetail" class="det-led-rear-lamp"></a>
+                                    <a href="wuling://showdetail" class="det-tailgate"></a>
+                                    <a href="wuling://showdetail" class="det-parking-sensor"></a>
+                                    <a href="wuling://showdetail" class="det-rear-foglamp"></a>
+                                    <a href="wuling://showdetail" class="det-led-rear-turning-signal"></a>
+                                    <a href="wuling://showdetail" class="det-rear-wiper"></a>
+                                </div>                    
+                            </div>
+                        </div>
+            
+                        <div id="exterior-cortez-l" product="cortez-l" class="current stage-sub stage-sub-2">
+                                        <div id="exterior-cortez-l-angle-1" class="current stage-sub angle angle-1">
+                                            <div class="color-opts">
+                                                <div class="black"></div>
+                                                <div class="brown"></div>
+                                                <div class="purple current"></div>
+                                                <div class="grey"></div>
+                                                <div class="white"></div>
+                                            </div>
+                                            <div class="details">
+                                                <a href="wuling://showdetail" class="det-roof-rail"></a>
+                                                <a href="wuling://showdetail" class="det-retractable-side-mirror"></a>
+                                                <a href="wuling://showdetail" class="det-sunroof"></a>
+                                                <a href="wuling://showdetail" class="det-head-lamp"></a>
+                                                <a href="wuling://showdetail" class="det-frameless-wiper"></a>
+                                                <a href="wuling://showdetail" class="det-vvt-i"></a>
+                                                <a href="wuling://showdetail" class="det-grille"></a>
+                                                <a href="wuling://showdetail" class="det-front-sensor"></a>
+                                                <a href="wuling://showdetail" class="det-auto-light"></a>
+                                                <a href="wuling://showdetail" class="det-foglamp"></a>
+                                                <a href="wuling://showdetail" class="det-drl-led"></a>
+                                                <a href="wuling://showdetail" class="det-wheel"></a>
+                                                <a href="wuling://showdetail" class="det-super-safety"></a>
+                                                <a href="wuling://showdetail" class="det-grip"></a>
+                                                <a href="wuling://showdetail" class="det-chrome-window"></a>
+                                                <a href="wuling://showdetail" class="det-side-door-mirror"></a>
+                                            </div>
+                                        </div>
+                                        <div id="exterior-cortez-l-angle-2" class="stage-sub angle angle-2">
+                                            <div class="color-opts">
+                                                <div class="black"></div>
+                                                <div class="brown"></div>
+                                                <div class="purple current"></div>
+                                                <div class="grey"></div>
+                                                <div class="white"></div>
+                                            </div>
+                                            <div class="details">
+                                                <a href="wuling://showdetail" class="det-sunroof"></a>
+                                                <a href="wuling://showdetail" class="det-roof-rail"></a>
+                                                <a href="wuling://showdetail" class="det-grille"></a>
+                                                <a href="wuling://showdetail" class="det-front-sensor"></a>
+                                                <a href="wuling://showdetail" class="det-foglamp"></a>
+                                                <a href="wuling://showdetail" class="det-drl-led"></a>
+                                                <a href="wuling://showdetail" class="det-auto-light"></a>
+                                                <a href="wuling://showdetail" class="det-head-lamp"></a>
+                                                <a href="wuling://showdetail" class="det-side-door-mirror"></a>
+                                            </div>                    
+                                        </div>
+                                        <div id="exterior-cortez-l-angle-3" class="stage-sub angle angle-3">
+                                            <div class="color-opts">
+                                                <div class="black"></div>
+                                                <div class="brown"></div>
+                                                <div class="purple current"></div>
+                                                <div class="grey"></div>
+                                                <div class="white"></div>
+                                            </div>
+                                            <div class="details">
+                                                <a href="wuling://showdetail" class="det-rear-parking-camera"></a>
+                                                <a href="wuling://showdetail" class="det-high-mount-stop-lamp"></a>
+                                                <a href="wuling://showdetail" class="det-shark-fin-antenna"></a>
+                                                <a href="wuling://showdetail" class="det-rear-spoiler"></a>
+                                                <a href="wuling://showdetail" class="det-led-rear-lamp"></a>
+                                                <a href="wuling://showdetail" class="det-tailgate"></a>
+                                                <a href="wuling://showdetail" class="det-parking-sensor"></a>
+                                                <a href="wuling://showdetail" class="det-rear-foglamp"></a>
+                                                <a href="wuling://showdetail" class="det-led-rear-turning-signal"></a>
+                                                <a href="wuling://showdetail" class="det-rear-wiper"></a>
+                                            </div>                    
+                                        </div>
+                                    </div>
+                        
+
+        </div>
+
+        <div class="color-selector">
+            <span class="white"></span>
+            <span class="grey"></span>
+            <span class="purple current"></span>
+            <span class="brown"></span>
+            <span class="black"></span>
+        </div>
+    </div>
+
+    <a href="wuling://rotatecw" class="rotate-cw"></a>
+    <a href="wuling://rotateccw" class="rotate-ccw"></a>
+</div>
+<div id="cortez-interior" section="interior" class="stage slide">
+    <div class="wuling">
+
+        <div class="header">
+
+                    <ul class="dropdown">
+                        <li class="item"><a href="wuling://productselect:cortez-c-6mt"></a></li>
+                        <li class="item"><a href="wuling://productselect:cortez-c-amt"></a></li>
+                        <li class="item"><a href="wuling://productselect:cortez-c-lux+-amt"></a></li>
+                        <li class="item"><a href="wuling://productselect:cortez-l-lux+-6mt"></a></li>
+                        <li class="item"><a href="wuling://productselect:cortez-l-lux+-amt"></a></li>
+                        <li class="caret"></li>
+                    </ul>
+            
+
+        </div>
+        <div class="body">
+
+                        <div id="interior-cortez-c" product="cortez-c" class="stage-sub stage-sub-2">
+                            <div 
+                                id="interior-cortez-c-cabin" 
+                                class="current stage-sub cabin" 
+                                >
+                                <div class="details">
+                                    <a href="wuling://showdetail" class="det-srs"></a>
+                                    <a href="wuling://showdetail" class="det-retractable-mirror"></a>
+                                    <!-- <a href="wuling://showdetail" class="det-electric-adjustable-seat"></a> -->
+                                    <a href="wuling://showdetail" class="det-adjustable-seat-belt"></a>
+                                    <a href="wuling://showdetail" class="det-seat-pocket"></a>
+                                    <a href="wuling://showdetail" class="det-rear-door-pocket"></a>
+                                    <a href="wuling://showdetail" class="det-trunk"></a>
+                                    <a href="wuling://showdetail" class="det-reclining-3rd-row-seats"></a>
+                                    <a href="wuling://showdetail" class="det-usb-all-rows"></a>
+                                    <a href="wuling://showdetail" class="det-iso"></a>
+                                    <a href="wuling://showdetail" class="det-seat-hook"></a>
+                                    <a href="wuling://showdetail" class="det-double-blower"></a>
+                                    <a href="wuling://showdetail" class="det-soft-nap"></a>
+                                    <!-- <a href="wuling://showdetail" class="det-atmosphere-lamp"></a> -->
+                                    <a href="wuling://showdetail" class="det-electric-parking-brake"></a>
+                                </div>
+                            </div>
+            
+                            <div 
+                                id="interior-cortez-c-dashboard" 
+                                class="stage-sub dashboard" 
+                                >
+                                <div class="details">
+                                    <a href="wuling://showdetail" class="det-ac-control-panel"></a>
+                                    <a href="wuling://showdetail" class="det-clock"></a>
+                                    <a href="wuling://showdetail" class="det-audio"></a>
+                                    <!-- <a href="wuling://showdetail" class="det-auto-wiper"></a> -->
+                                    <a href="wuling://showdetail" class="det-audio-phone-steering-switch"></a>
+                                    <a href="wuling://showdetail" class="det-tpms"></a>
+                                    <!-- <a href="wuling://showdetail" class="det-auto-light"></a> -->
+                                    <!-- <a href="wuling://showdetail" class="det-phone-mid"></a> -->
+                                    <a href="wuling://showdetail" class="det-power-window-panel"></a>
+                                    <a href="wuling://showdetail" class="det-front-door-compartment"></a>
+                                    <a href="wuling://showdetail" class="det-card-coin-box"></a>
+                                    <a href="wuling://showdetail" class="det-esc"></a>
+                                    <a href="wuling://showdetail" class="det-dual-srs"></a>
+                                    <a href="wuling://showdetail" class="det-tilt-steering"></a>
+                                    <a href="wuling://showdetail" class="det-armrest"></a>
+                                    <a href="wuling://showdetail" class="det-usb-aux-charging"></a>
+                                    <a href="wuling://showdetail" class="det-black-piano-door"></a>
+                                    <a href="wuling://showdetail" class="det-box-compartment"></a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div id="interior-cortez-l" product="cortez-l" class="stage-sub stage-sub-2">
+                                        <div 
+                                            id="interior-cortez-l-cabin" 
+                                            class="current stage-sub cabin" 
+                                            >
+                                            <div class="details">
+                                                <a href="wuling://showdetail" class="det-srs"></a>
+                                                <a href="wuling://showdetail" class="det-retractable-mirror"></a>
+                                                <a href="wuling://showdetail" class="det-electric-adjustable-seat"></a>
+                                                <a href="wuling://showdetail" class="det-adjustable-seat-belt"></a>
+                                                <a href="wuling://showdetail" class="det-seat-pocket"></a>
+                                                <a href="wuling://showdetail" class="det-rear-door-pocket"></a>
+                                                <a href="wuling://showdetail" class="det-trunk"></a>
+                                                <a href="wuling://showdetail" class="det-reclining-3rd-row-seats"></a>
+                                                <a href="wuling://showdetail" class="det-usb-all-rows"></a>
+                                                <a href="wuling://showdetail" class="det-iso"></a>
+                                                <a href="wuling://showdetail" class="det-seat-hook"></a>
+                                                <a href="wuling://showdetail" class="det-double-blower"></a>
+                                                <a href="wuling://showdetail" class="det-soft-nap"></a>
+                                                <a href="wuling://showdetail" class="det-atmosphere-lamp"></a>
+                                                <a href="wuling://showdetail" class="det-electric-parking-brake"></a>
+                                            </div>
+                                        </div>
+                        
+                                        <div 
+                                            id="interior-cortez-l-dashboard" 
+                                            class="stage-sub dashboard" 
+                                            >
+                                            <div class="details">
+                                                <a href="wuling://showdetail" class="det-ac-control-panel"></a>
+                                                <a href="wuling://showdetail" class="det-clock"></a>
+                                                <a href="wuling://showdetail" class="det-audio"></a>
+                                                <a href="wuling://showdetail" class="det-auto-wiper"></a>
+                                                <a href="wuling://showdetail" class="det-audio-phone-steering-switch"></a>
+                                                <a href="wuling://showdetail" class="det-tpms"></a>
+                                                <a href="wuling://showdetail" class="det-auto-light"></a>
+                                                <a href="wuling://showdetail" class="det-phone-mid"></a>
+                                                <a href="wuling://showdetail" class="det-power-window-panel"></a>
+                                                <a href="wuling://showdetail" class="det-front-door-compartment"></a>
+                                                <a href="wuling://showdetail" class="det-card-coin-box"></a>
+                                                <a href="wuling://showdetail" class="det-esc"></a>
+                                                <a href="wuling://showdetail" class="det-dual-srs"></a>
+                                                <a href="wuling://showdetail" class="det-tilt-steering"></a>
+                                                <a href="wuling://showdetail" class="det-armrest"></a>
+                                                <a href="wuling://showdetail" class="det-usb-aux-charging"></a>
+                                                <a href="wuling://showdetail" class="det-black-piano-door"></a>
+                                                <a href="wuling://showdetail" class="det-box-compartment"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+
+        </div>
+
+    </div>
+
+    <div class="tools">
+        <a href="wuling://switchview" class="current toggle-cabin"></a>
+        <a href="wuling://switchview" class="toggle-dashboard"></a>
+    </div>
+</div>
+<div id="cortez-specifications" section="specifications" class="stage slide">
+
+    <div class="header">
+    
+        <div class="wuling">
+            <ul class="dropdown">
+                <li class="item"><a href="wuling://productselect:specs-cortez-c-6mt"></a></li>
+                <li class="item"><a href="wuling://productselect:specs-cortez-c-amt"></a></li>
+                <li class="item"><a href="wuling://productselect:specs-cortez-c-lux+-amt"></a></li>
+                <li class="item"><a href="wuling://productselect:specs-cortez-l-6mt"></a></li>
+                <li class="item"><a href="wuling://productselect:specs-cortez-l-amt"></a></li>
+                <li class="caret"></li>
+            </ul>            
+        </div>
+    
+    </div>
+
+    <div class="body">
+        <div class="scrollable">
+            <table id="specs" cellspacing="0" cellpadding="0">
+
+                <tr class="head"><td>SPESIFIKASI</td><td></td><td></td></tr>
+                <tr class="section-title"><td>Dimensi</td><td></td><td></td></tr>
+
+                <tr data-property="panjang"><td><div>Panjang<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="lebar"><td><div>Lebar<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="tinggi"><td><div>Tinggi<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="poros_roda"><td><div>Poros Roda<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="jarak_pijak_depan"><td><div>Jarak Pijak Depan<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="jarak_pijak_belakang"><td><div>Jarak Pijak Belakang<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="radius_putar"><td><div>Radius Putar<span class="unit">mm</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="kapasitas_tangki"><td><div>Kapasitas Tangki<span class="unit">L</span></div></td><td><div></div></td><td><div></div></td></tr>
+                
+                <tr class="section-title"><td>Mesin</td><td></td><td></td></tr>
+
+                <tr data-property="tipe_mesin"><td><div>Tipe Mesin</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="isi_silinder"><td><div>Isi Silinder<span class="unit">cc</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="daya_maksimum"><td><div>Daya Maksimum<span class="unit">HP/RPM</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="torsi_maksimum"><td><div>Torsi Maksimum<span class="unit">Nm/RPM</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="bahan_bakar"><td><div>Bahan Bakar</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="section-title"><td>Transmisi</td><td></td><td></td></tr>
+
+                <tr data-property="tipe_mesin_transmisi"><td><div>Tipe</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_1"><td><div>Perbandingan Gigi<span class="unit">1</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_2"><td><div><span class="unit">2</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_3"><td><div><span class="unit">3</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_4"><td><div><span class="unit">4</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_5"><td><div><span class="unit">5</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_6"><td><div><span class="unit">6</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_mundur"><td><div>&nbsp;<span class="unit">Mundur</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="perbandingan_gigi_akhir"><td><div>Perbandingan Gigi Akhir</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="section-title"><td>Sasis</td><td></td><td></td></tr>
+
+                <tr data-property="roda_penggerak"><td><div>Penggerak Roda</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="tipe_kemudi"><td><div>Tipe Kemudi</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="tilt_steering"><td><div>Tilt Steering</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="suspensi_front"><td><div>Suspensi<span class="unit">Front</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="suspensi_rear"><td><div>&nbsp;<span class="unit">Rear</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="rem_front"><td><div>Rem<span class="unit">Front</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="rem_rear"><td><div>&nbsp;<span class="unit">Rear</span></div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="ukuran_ban"><td><div>Ukuran Ban</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="velg"><td><div>Velg</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="head"><td>KONFIGURASI</td><td></td><td></td></tr>
+                <tr class="section-title"><td>Eksterior</td><td></td><td></td></tr>
+
+                <tr data-property="adjustable_headlamp"><td><div>Adjustable Headlamp</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="handle_pintu"><td><div>Grip Type Door Handle</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="led_turning_signal"><td><div>LED Turning Signal</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="led_hmsl"><td><div>LED HMSL</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="rear_foglamp"><td><div>Rear Foglamp</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="side_turning_signal_lamp"><td><div>Side Turning Signal Lamp</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="roofrail"><td><div>Roofrail</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="rear_spoiler"><td><div>Rear Spoiler</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="rear_wiper"><td><div>Rear Wiper</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="alloy_wheel"><td><div>16" Alloy Wheel 205/55</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="drl"><td><div>DRL</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="front_foglamp"><td><div>Front Foglamp</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="retractable_outer_mirror"><td><div>Retractable Outer Mirror</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="automatic_wiper"><td><div>Automatic Wiper</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="frameless_wiper"><td><div>Frameless Wiper</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="shark_fin_antenna"><td><div>Shark Fin Antenna</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="sunroof"><td><div>Sunroof</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="automatic_headlamp_on"><td><div>Automatic Headlamp on</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="led_rear_lamp"><td><div>LED Rear Lamp & Brakelamp</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="section-title"><td>Interior</td><td></td><td></td></tr>
+
+                <tr data-property="entertainment_system"><td><div>Entertainment System</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="multi_information_display"><td><div>Multi Information Display</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="clock"><td><div>Clock in IP</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="double_blower"><td><div>Double Blower A/C</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="auto_ac"><td><div>Auto A/C</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="power_outlet_12v"><td><div>Power Outlet 12V</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="usb_power_outlet_all_row"><td><div>USB Power Outlet all Row</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="anti_glare_inner_mirror"><td><div>Anti Glare Inner Mirror</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="sunvisor_with_mirror"><td><div>Sunvisor w/ Vanity Mirror</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="audio_steering_switch"><td><div>Audio Steering Switch Control &amp; Call Button</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="electric_seat_adjuster"><td><div>Electric Driver and Co- Driver Seat Adjuster (incl. height for driver)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="atmosphere_lamp"><td><div>Atmosphere Lamp</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="fabric_seats"><td><div>Fabric Seats (2+3+3)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="soft_nap_seats"><td><div>Soft Nap Seat (2+3+3)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="semi-leather_seats_2+3+3"><td><div>Semi - Leather Seats (2+3+3)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="semi-leather_seats_2+2+3"><td><div>Semi-Leather Seats (2+2+3)</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="section-title"><td>Convenience</td><td></td><td></td></tr>
+
+                <tr data-property="remote_windows"><td><div>Remote open windows &amp; Trunks</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="power_windows"><td><div>Power Windows</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="rke"><td><div>Foldable RKE (with finding)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="central_door_lock"><td><div>Central Door Lock</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="auto_driver_side_window"><td><div>Automatic driver side window (Pinch Protection)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="electric_tailgate"><td><div>Electric Tailgate Lock</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="dual_horn"><td><div>Dual Horn</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="follow_me_home"><td><div>Follow Me Home</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="ignition_backlight"><td><div>Ignition With Back Light</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="speakers"><td><div>Speakers</div></td><td><div></div></td><td><div></div></td></tr>
+
+                <tr class="section-title"><td>Safety &amp; Security</td><td></td><td></td></tr>
+
+                <tr data-property="seatbelts_all_rows"><td><div>Seatbelts All Rows</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="iso_fix"><td><div>ISO-FIX</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="anti_theft"><td><div>Anti Theft System</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="front_airbags"><td><div>Front Airbags</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="auto_door_lock"><td><div>Auto Door Lock by Speed (10km/h)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="abs_ebd"><td><div>ABS + EBD</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="front_rear_disc_brake"><td><div>Front & Rear Disc Brake</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="tpm"><td><div>Tyre Pressure Monitoring System</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="immobilizer"><td><div>Immobilizer</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="rear_parking_sensors"><td><div>4 Points Rear Parking Sensor</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="epb"><td><div> EPB (Electric Parking Brake)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="front_parking_sensors"><td><div>2 Points Front Parking Sensor</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="side_airbags"><td><div>Side Airbags (Front Side)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="avh"><td><div>AVH (Automatic Vehicle Holding)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="esc"><td><div>ESC (Electronic Stability Control)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="tcs"><td><div>TCS (Traction Control System)</div></td><td><div></div></td><td><div></div></td></tr>
+                <tr data-property="hba"><td><div>HBA (Hydrolyc Brake Assit)</div></td><td><div></div></td><td><div></div></td></tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<div id="user-form" class="stage page">
+    <div>
+        <label for="form-name">Nama</label>
+        <input type="text" id="form-name">
+    </div>
+    <div>
+        <label for="form-job">Pekerjaan</label>
+        <input type="text" id="form-job">
+    </div>
+    <div>
+        <label for="form-ph">No. Telepon</label>
+        <input type="text" id="form-ph">
+    </div>
+    <div>
+        <label for="form-status">Status</label>
+        <input type="text" id="form-status">
+    </div>
+    <div>
+        <label for="form-kids">Jumlah anak</label>
+        <input type="text" id="form-kids">
+    </div>
+    <div>
+        <label for="form-motive">Motif Beli Utama</label>
+        <input type="text" id="form-motive">
+    </div>
+    <div>
+        <label for="form-current_car">Mobil yang dipakai saat ini</label>
+        <input type="text" id="form-current_car">
+    </div>
+    <div>
+        <label for="form-compared_car">Mobil pembanding</label>
+        <input type="text" id="form-compared_car">
+    </div>
+    <div>
+        <label for="form-no_reason">Alasan belum berminat</label>
+        <textarea id="form-no_reason"></textarea>
+    </div>
+    <div>
+        <label for="form-budget">Budget</label>
+        <input type="text" id="form-budget">
+    </div>
+    <div>
+        <label for="form-address">Alamat</label>
+        <textarea id="form-address"></textarea>
+    </div>
+    <div>
+        <label for="form-estimated_buy_date">Tanggal estimasi pemesanan</label>
+        <input type="text" id="form-estimated_buy_date">
+    </div>
+    <div>
+        <label for="form-test_drive_date">Tanggal Test Drive</label>
+        <input type="text" id="form-test_drive_date">
+    </div>
+    <div>
+        <label for="form-note">Catatan Tambahan</label>
+        <textarea id="form-note"></textarea>
+    </div>
+
+    <div>
+        <a href="#" id="submit-form">Submit</a>
+    </div>
+</div>
+<div id="drive" class="stage page">
+    <ul class="catalog">
+        <li>
+            <div class="thumbnail"></div>
+            <div class="metadata">
+                <span class="type"></span>
+                <span class="added"></span>
+            </div>
+            <div class="title"></div>
+            <a href="#" class="drive-action"></a>
+        </li>
+    </ul>
+
+    <h3 class="recordings">Rekaman</h3>
+    <ul class="recordings"></ul>
+</div>
+
+    </div>
+    <div id="detail" style="display: none;">
+        <div class="container">
+            <a href="wuling://hidedetail" class="close"></a>
+
+            <div class="content">
+                <div class="comparison">
+                    <span class="internal-use">For internal use only</span>
+                    <h1></h1>
+                    <div class="items">
+                        <div class="wuling"><div></div><span></span></div>
+                        <div class="competitor"><div></div><span></span></div>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
